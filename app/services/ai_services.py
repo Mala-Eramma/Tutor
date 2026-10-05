@@ -14,7 +14,7 @@ client = genai.Client(api_key=api_key)
 
 def get_ai_response(question):
     response = client.models.generate_content(
-        model="gemini-3.6-flash",
+        model="gemini-3.5-flash-lite",
         contents=f"Answer briefly in simple words without special symbols. Question: {question}"
     )
 
